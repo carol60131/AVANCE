@@ -28,8 +28,8 @@ def calFlyDist2Unit(flyDist, Unit):
 
 
 def main():
-	FlyDist2Unit = calFlyDist2Unit(flyDist, Unit)
-	print("{:.3f}".format(FlyDist2Unit))
+	flyDist2Unit = calFlyDist2Unit(flyDist, Unit)
+	print("{:.3f}".format(flyDist2Unit))
 
 
 if __name__ == '__main__':
