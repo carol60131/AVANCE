@@ -2,22 +2,22 @@
 # 飛行速率單位轉換
 
 
-def calFlyDist2Unit(flyDist, Unit):
+def calFlyDist2Unit(flyDist, unit):
 
 	# 公里
-	if Unit == 'Km':
+	if unit == 'Km':
 		result = flyDist / 0.001
 
 	# 英尺
-	elif Unit == 'ft':
+	elif unit == 'ft':
 		result = flyDist * 0.3048
 	
 	# 碼
-	elif Unit == 'Yrds':
+	elif unit == 'Yrds':
 		result = flyDist * 0.9144
 	
 	# 英哩
-	elif Unit == 'Miles':
+	elif unit == 'Miles':
 		result = flyDist * 0.6214 / 0.001
 
 	# 公尺
@@ -28,7 +28,9 @@ def calFlyDist2Unit(flyDist, Unit):
 
 
 def main():
-	flyDist2Unit = calFlyDist2Unit(flyDist, Unit)
+	flyDist = 1
+	unit = 'Km'
+	flyDist2Unit = calFlyDist2Unit(flyDist, unit)
 	print("{:.3f}".format(flyDist2Unit))
 
 
